@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: grayscale($color: #535355);
+
+    header {
+        position: fixed;
+        z-index: 100;
+        width: 100vw;
+        height: 10vh;
+    }
+
+    main {
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+}
+
+.texto-lol {
+    opacity: 0;
+    transition: .5s ease;
+    @include background-opacity(#000000, 0.3);
+}
+
+.texto {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.estudio:hover .texto-estudio {
+    opacity: 1;
+}
+
+/* INDEX CON GRID */
+.index-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.-estudio {
+    display: block;
+    width: 90vw;
+    height: 80vh;
+}
+
+.-estudio {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 60vw;
+    height: 80vh;
+}
+
+
+
+/* CONTACTO */
+.formulario {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 0.5fr 1.3fr 0.5fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "... form ..."
+        "... form ..."
+        "... form ..."
+        "... form ..."
+}
+
+.form {
+    grid-area: form;
+}
+
+/* PROYECTOS */
+
+.project {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "foto1 foto1 foto1 foto2 foto2 foto2 foto3 foto3 foto3"
+        "foto1 foto1 foto1 foto2 foto2 foto2 foto3 foto3 foto3"
+        "foto1 foto1 foto1 foto2 foto2 foto2 foto3 foto3 foto3"
+        "foto4 foto4 foto4 foto5 foto5 foto5 foto6 foto6 foto6"
+        "foto4 foto4 foto4 foto5 foto5 foto5 foto6 foto6 foto6"
+        "foto4 foto4 foto4 foto5 foto5 foto5 foto6 foto6 foto6";
+}
+
+.foto1 {
+    grid-area: foto1;
+}
+
+.foto2 {
+    grid-area: foto2;
+}
+
+.foto3 {
+    grid-area: foto3;
+}
+
+.foto4 {
+    grid-area: foto4;
+}
+
+.foto5 {
+    grid-area: foto5;
+}
+
+.foto6 {
+    grid-area: foto6;
+}
+
+/* ESTUDIO */
+
+.estudio {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1.2fr 0.9fr;
+    grid-template-rows: 0.6fr 1.3fr 1.1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "studio studio"
+        "img-charla texto-somos"
+        "texto-ser img-laptop";
+}
+
+.img-charla {
+    grid-area: img-charla;
+}
+
+.texto-somos {
+    grid-area: texto-somos;
+}
+
+.texto-ser {
+    grid-area: texto-ser;
+}
+
+.img-laptop {
+    grid-area: img-laptop;
+}
+
+.studio {
+    grid-area: studio;
+}
+
+.equipo {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "chica1 nombres chica2";
+    margin-top: 2em;
+}

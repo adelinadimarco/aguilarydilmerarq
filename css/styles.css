@@ -1,0 +1,338 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap");
+.resalta {
+  color: #ff1749;
+  font: 2;
+  text-transform: uppercase; }
+
+body {
+  color: white; }
+  body h1 {
+    text-align: center;
+    text-transform: uppercase; }
+  body h2 {
+    text-align: center;
+    font-weight: 700; }
+  body p {
+    font-weight: 400; }
+
+.italica {
+  font-style: italic;
+  text-align: center; }
+
+.padding-sup {
+  padding-top: 10vh; }
+
+.datos {
+  font-size: 0.5em;
+  font-variant-caps: all-small-caps; }
+
+#mapa {
+  width: 100%;
+  height: 25rem;
+  -webkit-filter: grayscale(100%);
+  -ms-filter: grayscale(100%); }
+
+.form {
+  font-family: "Montserrat", sans-serif;
+  margin: 2rem;
+  font-size: 1.2rem;
+  color: #ff1749;
+  width: 500px;
+  display: block; }
+  .form input {
+    border: none;
+    border-bottom: 0.3rem solid #ff1749;
+    background-color: transparent;
+    outline: none;
+    width: 50vw;
+    color: #ff1749;
+    font-style: #ff1749;
+    margin-top: 1rem; }
+  .form textarea {
+    border: none;
+    border-bottom: 0.3rem solid #ff1749;
+    background-color: transparent;
+    width: 75vw;
+    height: auto;
+    resize: none;
+    margin-bottom: 2vh; }
+  .form .button {
+    border: none;
+    background-color: #ff1749;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer; }
+
+input::placeholder {
+  color: #ff1749; }
+
+textarea::placeholder {
+  color: #ff1749; }
+
+textarea:focus {
+  color: #ff1749; }
+
+.adress {
+  text-align: center;
+  font-stretch: semi-expanded;
+  color: white;
+  background-color: black;
+  padding: 2rem;
+  width: 100%; }
+
+.logo {
+  animation: zoomIn;
+  animation-duration: 3s;
+  margin: 6px;
+  width: 98%;
+  height: 98%;
+  animation-delay: 2ms; }
+
+.header {
+  background: #000000;
+  background: rgba(0, 0, 0, 0.3);
+  overflow: hidden; }
+
+.header nav {
+  height: 100%;
+  display: flex;
+  justify-content: space-between; }
+  .header nav ul li {
+    list-style: none;
+    display: inline-block;
+    justify-content: space-evenly;
+    padding: 1.5em; }
+    .header nav ul li a {
+      text-decoration: none;
+      font-weight: 700;
+      color: white;
+      font-size: 1.5em; }
+
+.header a:hover {
+  color: #ff1749; }
+
+.header a.active {
+  color: #525252; }
+
+.header .icon {
+  display: none; }
+
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none; }
+
+#check {
+  display: none; }
+
+@media screen and (max-width: 600px) {
+  .checkbtn {
+    display: block; }
+  #check:checked ~ ul {
+    display: inline-flex; }
+  .header {
+    z-index: 1; }
+    .header ul {
+      display: none; }
+    .header .logo {
+      width: 85%;
+      height: 85%; }
+    .header .header a i:hover {
+      display: header nav; } }
+
+footer {
+  margin: 0; }
+  footer ul {
+    display: flex;
+    justify-content: space-around; }
+  footer li {
+    list-style-type: none; }
+
+.redes {
+  transition: width 0.3s, height 0.3s, transform 2s; }
+
+.redes:hover {
+  width: 3rem;
+  height: 3rem; }
+
+footer {
+  background-image: linear-gradient(to right, silver, gray);
+  font-family: 'Montserrat', sans-serif; }
+  footer p {
+    color: black;
+    text-align: center; }
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 100%; }
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #545454; }
+  body header {
+    position: fixed;
+    z-index: 100;
+    width: 100vw;
+    height: 10vh; }
+  body main {
+    margin-left: 5vw;
+    margin-right: 5vw; }
+
+.texto-lol {
+  opacity: 0;
+  transition: .5s ease;
+  background: #000000;
+  background: rgba(0, 0, 0, 0.3); }
+
+.texto {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center; }
+
+.estudio:hover .texto-estudio {
+  opacity: 1; }
+
+/* INDEX CON GRID */
+.index-principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center; }
+
+.-estudio {
+  display: block;
+  width: 90vw;
+  height: 80vh; }
+
+.-estudio {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 60vw;
+  height: 80vh; }
+
+/* CONTACTO */
+.formulario {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 0.5fr 1.3fr 0.5fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "... form ..." "... form ..." "... form ..." "... form ..."; }
+
+.form {
+  grid-area: form; }
+
+/* PROYECTOS */
+.project {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "foto1 foto1 foto1 foto2 foto2 foto2 foto3 foto3 foto3" "foto1 foto1 foto1 foto2 foto2 foto2 foto3 foto3 foto3" "foto1 foto1 foto1 foto2 foto2 foto2 foto3 foto3 foto3" "foto4 foto4 foto4 foto5 foto5 foto5 foto6 foto6 foto6" "foto4 foto4 foto4 foto5 foto5 foto5 foto6 foto6 foto6" "foto4 foto4 foto4 foto5 foto5 foto5 foto6 foto6 foto6"; }
+
+.foto1 {
+  grid-area: foto1; }
+
+.foto2 {
+  grid-area: foto2; }
+
+.foto3 {
+  grid-area: foto3; }
+
+.foto4 {
+  grid-area: foto4; }
+
+.foto5 {
+  grid-area: foto5; }
+
+.foto6 {
+  grid-area: foto6; }
+
+/* ESTUDIO */
+.estudio {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1.2fr 0.9fr;
+  grid-template-rows: 0.6fr 1.3fr 1.1fr;
+  gap: 0px 0px;
+  grid-template-areas: "studio studio" "img-charla texto-somos" "texto-ser img-laptop"; }
+
+.img-charla {
+  grid-area: img-charla; }
+
+.texto-somos {
+  grid-area: texto-somos; }
+
+.texto-ser {
+  grid-area: texto-ser; }
+
+.img-laptop {
+  grid-area: img-laptop; }
+
+.studio {
+  grid-area: studio; }
+
+.equipo {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "chica1 nombres chica2";
+  margin-top: 2em; }
+
+@media only screen and (max-width: 567px) {
+  h1 {
+    margin-top: 8vh;
+    display: block;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase; }
+  main {
+    display: block; }
+    main div a img {
+      justify-items: center;
+      height: 50%;
+      width: 100%; }
+    main h2 {
+      text-align: center;
+      font-weight: 700;
+      font-size: 1em; }
+    main h3 {
+      text-align: center;
+      font-weight: 700;
+      font-size: 1em; }
+    main p {
+      text-align: center;
+      font-weight: 400;
+      font-size: 0.8em; }
+  .grid {
+    display: block; }
+  .formulario {
+    display: block; }
+  .project {
+    display: block; }
+  .estudio {
+    display: block; }
+  .mapa {
+    width: 100%;
+    height: 15vh; }
+  .form {
+    display: block;
+    font-family: "Montserrat", sans-serif;
+    margin: 0; } }

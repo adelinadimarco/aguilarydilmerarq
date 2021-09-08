@@ -1,0 +1,116 @@
+// TEXTOS DE INDEX
+
+$fuente-resalta: 1rem/0.5rem;
+$rojo-cereza: rgb(255, 23, 73);
+
+.resalta {
+	color: $rojo-cereza;
+	font: $fuente-resalta;
+	text-transform: uppercase;
+}
+
+
+// TEXTOS GENERALES
+body {
+	color: white;
+
+	h1 {
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	h2 {
+		text-align: center;
+		font-weight: 700;
+	}
+
+	p {
+		font-weight: 400;
+	}
+}
+
+.italica {
+	font-style: italic;
+	text-align: center;
+}
+
+// MARGENES
+
+.padding-sup {
+	padding-top: 10vh;
+}
+
+
+.datos {
+	font-size: 0.5em;
+	font-variant-caps: all-small-caps;
+}
+
+// FORM DE CONTACTO - ESTILO
+
+#mapa {
+	width: 100%;
+	height: 25rem;
+	-webkit-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+}
+
+.form {
+	font-family: "Montserrat", sans-serif;
+	margin: 2rem;
+	font-size: 1.2rem;
+	color: $rojo-cereza;
+	width: 500px;
+	display: block;
+
+	input {
+		border: none;
+		border-bottom: 0.3rem solid $rojo-cereza;
+		background-color: transparent;
+		outline: none;
+		width: 50vw;
+		color: $rojo-cereza;
+		font-style: $rojo-cereza;
+		margin-top: 1rem;
+	}
+
+	textarea {
+		border: none;
+		border-bottom: 0.3rem solid $rojo-cereza;
+		background-color: transparent;
+		width: 75vw;
+		height: auto;
+		resize: none;
+		margin-bottom: 2vh;
+	}
+
+	.button {
+		border: none;
+		background-color: $rojo-cereza;
+		border-radius: 5px;
+		color: white;
+		text-decoration: none;
+		cursor: pointer;
+	}
+}
+
+input::placeholder {
+	color: $rojo-cereza;
+}
+
+textarea::placeholder {
+	color: $rojo-cereza;
+}
+
+textarea:focus {
+	color: $rojo-cereza;
+}
+
+.adress {
+	text-align: center;
+	font-stretch: semi-expanded;
+	color: white;
+	background-color: black;
+	padding: 2rem;
+	width: 100%;
+}

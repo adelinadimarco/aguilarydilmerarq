@@ -1,0 +1,96 @@
+// ESTILO Y ESTRUCTURA DEL HEADER 
+@mixin background-opacity($color, $opacity) {
+    background: $color;
+    background: rgba($color, $opacity);
+}
+
+.logo {
+    animation: zoomIn;
+    animation-duration: 3s;
+    margin: 6px;
+    width: 98%;
+    height: 98%;
+    animation-delay: 2ms;
+}
+
+.header {
+    @include background-opacity(#000000, 0.3);
+    overflow: hidden;
+}
+
+.header nav {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    ul li {
+        list-style: none;
+        display: inline-block;
+        justify-content: space-evenly;
+        padding: 1.5em;
+
+        a {
+            text-decoration: none;
+            font-weight: 700;
+            color: white;
+            font-size: 1.5em;
+        }
+    }
+}
+
+.header a:hover {
+    color: $rojo-cereza;
+}
+
+.header a.active {
+    color: grayscale($color: #525252);
+}
+
+.header .icon {
+    display: none;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .checkbtn {
+        display: block;
+    }
+
+
+    #check:checked~ul {
+        display: inline-flex;
+    }
+
+    .header {
+        z-index: 1;
+
+        ul {
+            display: none;
+
+        }
+
+        .logo {
+            width: 85%;
+            height: 85%;
+        }
+
+
+
+        .header a i:hover {
+            display: header nav;
+        }
+    }
+}

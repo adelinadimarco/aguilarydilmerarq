@@ -1,0 +1,36 @@
+// FOOTER FORMATO
+
+footer {
+    margin: 0;
+
+
+    ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    li {
+        list-style-type: none;
+    }
+}
+
+.redes {
+    transition: width 0.3s, height 0.3s, transform 2s;
+}
+
+.redes:hover {
+    width: 3rem;
+    height: 3rem;
+}
+
+
+// TEXTOS DE FOOTER
+footer {
+	background-image: linear-gradient(to right, silver, gray);
+	font-family: 'Montserrat', sans-serif;
+
+	p {
+		color: black;
+		text-align: center;
+	}
+}
