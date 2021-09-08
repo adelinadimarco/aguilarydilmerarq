@@ -5,6 +5,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Descripción -->
+  <meta name="description"
+    content="Estudio de diseño y arquitectura basado en Buenos Aires en 2016. Dedicado a la transformación y diseño de espacios." />
+  <meta name="Keywords"" content=" Diseño de Interiores, Diseño Arquitectónico, Estudio de Arquitectura, Presupuesto de
+    diseño, Renovación de cocina, Renovación de baño, Remodelación de interiores, Construcción, Planificación de
+    espacios">
+  <title>A·D Arquitectura</title>
 
   <!-- Animation -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -22,23 +29,15 @@
 
   <!-- CSS Folders -->
   <link rel="stylesheet" href="css/styles.css" />
-
-  <!-- Descripción -->
-  <title>A·D Arquitectura</title>
-  <meta name="description"
-    content="Estudio de diseño y arquitectura basado en Buenos Aires en 2016. Dedicado a la transformación y diseño de espacios." />
-  <meta name="Keywords"" content=" Diseño de Interiores, Diseño Arquitectónico, Estudio de Arquitectura, Presupuesto de
-    diseño, Renovación de cocina, Renovación de baño, Remodelación de interiores, Construcción, Planificación de
-    espacios">
 </head>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 
 <body>
 
   <header class="header">
+    <!--Header General Empieza-->
     <nav>
-
       <a href="index.html">
         <img src="assets/logo.png" alt="Logo" class="logo">
       </a>
@@ -59,17 +58,40 @@
           <a href="contacto.html" class="item-link">Contacto</a>
         </li>
       </ul>
-      <input type="checkbox" id="check">
-      <a></a><label for="check" class="checkbtn">
-        <i class="fas fa-bars"></i>
-      </label></a>
+      <div class="humberger__menu__overlay">
+        <input type="checkbox" id="check">
+        <a></a><label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+          <!-- Menu Hamburguesa -->
+          <div class="humberger__menu__wrapper">
+            <nav class="humberger__menu__nav mobile-menu">
+              <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#">Etudio</a></li>
+                <li><a href="#">Proyectos</a></li>
+                <li><a href="#">Interiores</a></li>
+                <li><a href="./contact.html">Contacto</a></li>
+              </ul>
+            </nav>
+            <div id="mobile-menu-wrap"></div>
+            <div class="humberger__menu__about">
+              <div class="humberger__menu__about__social sidebar__item__follow__links">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-youtube-play"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-envelope-o"></i></a>
+              </div>
+            </div>
+          </div>
+        </label></a>
+        <!-- Fin Menu Hamburguesa -->
     </nav>
   </header>
 
   <!-- Carousel - Bootstrap -->
   <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-    <!-- <h1 id="titulo" class="centered" style="color: red;">Diseño contemporáneo y de vanguardia</h1> -->
-    <div class="carousel-inner">
+<div class="carousel-inner">
       <div class="carousel-item active">
         <img src="assets/edifi plantas.jpg" class="d-block w-100" alt="...">
       </div>
@@ -89,58 +111,50 @@
       <span class="sr-only">Next</span>
     </a>
 
-  </div>
+ <!-- Empieza Index -->
+      <h1>Diseño contemporáneo y de vanguardia</h1>
 
-  <h1>Diseño contemporáneo y de vanguardia</h1>
-
-  <!-- Empieza principal -->
   <main class="index-principal">
-
+   
     <!-- Estudio -->
-    <article>
+    <article class="texto-index">
       <h2>El Estudio</h2>
       <h3 class="resalta"> Proyecto · Diseño · Dirección · Construcción</h3>
       <p>Somos un estudio especializado en high quality designs para edificios de vivienda y
-        comerciales. </p>
-      <p> Con gran
+        comerciales. <br>Con gran
         experiencia en el ámbito de la construcción, lo que nos permite proyectar con una alta calidad en la
         resolución
         espacial y de cada uno de los detalles. </p>
     </article>
+
     <a href="estudio.html">
       <img src="assets/women-business-office-meetings.jpg" alt="Nosotras">
     </a>
 
-    </div>
-
     <!-- Proyectos -->
-    <div>
+    <article class="texto-index">
       <h2>Proyectos</h2>
       <h3 class="resalta"> · Construcción del Siglo XXI · </h3>
       <p>El trabajo proyectual se desarrolla en base a las necesidades del usuario,
-        con una mirada contemporánea que busca utilizar los recursos al máximo.</p>
-      <p>Registramos las mejores tomas de todos nuestros trabajos que representan nuestra visión y
+        con una mirada contemporánea que busca utilizar los recursos al máximo.
+        <br> Registramos las mejores tomas de todos nuestros trabajos que representan nuestra visión y
         ética de diseño.</p>
-    </div>
+    </article>
 
-    <div>
-      <a href="proyectos.html"><img src="assets/stairs cool.jpg" alt="Casa Huapi"></a>
-    </div>
+    <a href="proyectos.html"><img src="assets/stairs cool.jpg" alt="Casa Huapi"></a>
 
     <!-- Contacto -->
-    <div>
+    <article class="texto-index">
       <h2>Contacto</h2>
       <h3 class="resalta"> · Contáctenos ·</h3>
-      <p>Estudio Aguilar y Dilmer</p>
-      <p>Jerónimo Salguero 350, CABA, 1177, Buenos Aires, Argentina</p>
-      <p>Cel: +54 11 5851 5684</p>
-      <p>Tel: +54 11 5846 5846</p>
-      <p>E-mail: xxx@gmail.com</p>
-    </div>
+      <p>Estudio Aguilar y Dilmer <br>
+        Jerónimo Salguero 350, CABA, 1177, Buenos Aires, Argentina <br>
+        Cel: +54 11 5851 5684 <br>
+        Tel: +54 11 5846 5846 <br>
+        E-mail: xxx@gmail.com</p>
+    </article>
 
-    <div>
-      <a href="contacto.html"><img src="assets/women-business-office-meetings.jpg" alt="Contactanos"></a>
-    </div>
+    <a href="contacto.html"><img src="assets/women-business-office-meetings.jpg" alt="Contactanos"></a>
 
   </main>
   <!-- termina -->
