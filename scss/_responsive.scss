@@ -1,3 +1,4 @@
+// MEDIA PARA PANTALLA CELULAR PEQUEÑA - MAX 500px
 @media only screen and (max-width: 500px) {
     body {
         display: block;
@@ -47,23 +48,7 @@
         }
     }
 
-    .grid {
-        display: block;
-    }
-
-    .formulario {
-        display: block;
-    }
-
-    .project {
-        display: block;
-    }
-
-    .estudio {
-        display: block;
-    }
-
-    .mapa {
+    #mapa {
         width: 100%;
         height: 15vh;
     }
@@ -74,11 +59,34 @@
         margin: 0;
     }
 
-        .texto-idex {
-            padding: 0;
-            margin: 0;
-        }
+    .texto-idex {
+        padding: 0;
+        margin: 0;
+    }
+
+    .estudio {
+        display: block;
+    }
+
+    .two-cards {
+        display: block;
+    }
+
+    .interior {
+        display: block;
+    }
+
+    .adress {
+        display: none;
+    }
+
+    #titulo {
+        max-width: 500px;
+        font-size: 2rem;
+        overflow: hidden;
+    }
 }
 
+// MEDIA PARA PANTALLA TABLET - MAX 1024px
 // @media only screen and (max-width: 1024px) {
 //   }

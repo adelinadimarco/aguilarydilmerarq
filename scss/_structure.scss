@@ -1,3 +1,4 @@
+// ESTRUCTURA GENERAL
 * {
     margin: 0;
     padding: 0;
@@ -6,27 +7,44 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: grayscale($color: #535355);
 
     header {
-        position: fixed;
         z-index: 100;
         width: 100vw;
         height: 10vh;
     }
 
     main {
-        margin-left: 5vw;
-        margin-right: 5vw;
+        margin: 5vw;
 
         img {
             justify-items: center;
             height: 50%;
             width: 90vw;
         }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            margin: 1rem;
+        }
     }
 }
 
+// MARGENES
+
+.padding-sup {
+    padding-top: 10vh;
+}
+
+.margen-foto {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+// ESTRUCTURA INDEX
 .indexx {
     position: relative;
     width: 100%;
@@ -68,7 +86,8 @@ body {
     opacity: 1;
 }
 
-/* INDEX CON GRID */
+
+// INDEX CON GRID
 .index-principal {
     display: flex;
     flex-direction: column;
@@ -76,25 +95,15 @@ body {
     justify-items: center;
 }
 
-.-estudio {
-    display: block;
-    width: 90vw;
-    height: 80vh;
+
+// CONTACTO
+#mapa {
+    width: 100%;
+    height: 25rem;
+    -webkit-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
 }
 
-.-estudio {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 60vw;
-    height: 80vh;
-}
-
-
-
-/* CONTACTO */
 .formulario {
     display: grid;
     grid-auto-columns: 1fr;
@@ -112,87 +121,184 @@ body {
     grid-area: form;
 }
 
-/* PROYECTOS */
+// PROYECTOS
+.two-cards {
+    margin: 1.5rem;
+    display: flex;
+}
 
-.project {
+.card {
+    display: block;
+    border-radius: 2rem;
+    background-color: whitesmoke;
+    box-shadow: 6px 5px 15px rgba(0, 0, 0, 0.9);
+    text-align: center;
+    height: 50%;
+    width: 40vw;
+    margin-right: 1.5rem;
+}
+
+.card-image {
+    grid-area: image;
+    border-radius: 2rem;
+    height: 60vh;
+    width: 40vw;
+}
+
+.card-text {
+    margin: 1.5rem;
+
+    .place {
+        color: royalblue;
+
+    }
+
+    p {
+        color: black;
+        display: inline-block;
+    }
+
+    h4 {
+        color: black;
+        margin-top: 2px;
+        font-size: 28px;
+    }
+
+    .grid-stats {
+        grid-area: stats;
+        background-color: $rosa;
+    }
+}
+
+// INTERIORES 
+.interior {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     gap: 0px 0px;
     grid-template-areas:
-        "foto1 foto1 foto1 foto2 foto2 foto2 foto3 foto3 foto3"
-        "foto1 foto1 foto1 foto2 foto2 foto2 foto3 foto3 foto3"
-        "foto1 foto1 foto1 foto2 foto2 foto2 foto3 foto3 foto3"
-        "foto4 foto4 foto4 foto5 foto5 foto5 foto6 foto6 foto6"
-        "foto4 foto4 foto4 foto5 foto5 foto5 foto6 foto6 foto6"
-        "foto4 foto4 foto4 foto5 foto5 foto5 foto6 foto6 foto6";
+        "obra1 obra2"
+        "obra3 obra4"
+        "obra5 obra6"
+        "obra7 obra8";
+    max-width: 100%;
+    overflow-x: hidden;
+
+    img {
+        width: 43vw;
+        height: 60vh;
+    }
 }
 
-.foto1 {
-    grid-area: foto1;
+.obra1 {
+    grid-area: obra1;
 }
 
-.foto2 {
-    grid-area: foto2;
+.obra2 {
+    grid-area: obra2;
 }
 
-.foto3 {
-    grid-area: foto3;
+.obra3 {
+    grid-area: obra3;
 }
 
-.foto4 {
-    grid-area: foto4;
+.obra4 {
+    grid-area: obra4;
 }
 
-.foto5 {
-    grid-area: foto5;
+.obra5 {
+    grid-area: obra5;
 }
 
-.foto6 {
-    grid-area: foto6;
+.obra6 {
+    grid-area: obra6;
 }
 
-/* ESTUDIO */
+.obra7 {
+    grid-area: obra7;
+}
+
+.obra8 {
+    grid-area: obra8;
+}
+
+// ESTUDIO
 
 .estudio {
     display: grid;
-    grid-auto-columns: 1fr;
-    grid-template-columns: 1.2fr 0.9fr;
-    grid-template-rows: 0.6fr 1.3fr 1.1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     gap: 0px 0px;
     grid-template-areas:
-        "studio studio"
-        "img-charla texto-somos"
-        "texto-ser img-laptop";
+        "man1 man2 man3 man4"
+        "juan lidia angie gustavo";
 }
 
-.img-charla {
-    grid-area: img-charla;
+.man1 {
+    grid-area: man1;
+    width: 20vw;
+    height: 20vh;
 }
 
-.texto-somos {
-    grid-area: texto-somos;
+.man2 {
+    grid-area: man2;
+    width: 20vw;
+    height: 20vh;
 }
 
-.texto-ser {
-    grid-area: texto-ser;
+.man3 {
+    grid-area: man3;
+    width: 20vw;
+    height: 20vh;
 }
 
-.img-laptop {
-    grid-area: img-laptop;
+.man4 {
+    grid-area: man4;
+    width: 20vw;
+    height: 20vh;
 }
 
-.studio {
-    grid-area: studio;
+.juan {
+    grid-area: juan;
+    width: 20vw;
+    height: 20vh;
 }
 
-.equipo {
-    display: grid;
-    grid-auto-columns: 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 0px 0px;
-    grid-template-areas:
-        "chica1 nombres chica2";
-    margin-top: 2em;
+.lidia {
+    grid-area: lidia;
+    width: 20vw;
+    height: 20vh;
+}
+
+.gustavo {
+    grid-area: gustavo;
+    width: 20vw;
+    height: 20vh;
+}
+
+.angie {
+    grid-area: angie;
+    width: 20vw;
+    height: 20vh;
+}
+
+// SEGUNDO HEADER PARA SECCIONES
+.head2 {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 100vw;
+
+    img {
+        width: 100vw;
+    }
+}
+
+.texto-head {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    color: rgb(255, 255, 255);
+    transform: translate(-50%, -50%);
 }

@@ -29,9 +29,11 @@
 
   <!-- CSS Folders -->
   <link rel="stylesheet" href="css/styles.css" />
-</head>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="icon" type="image/vnd.microsoft.icon" href="RUTA/NOMBRE_FICHERO.ico">
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" /> 
+</head>
 
 <body>
 
@@ -58,34 +60,10 @@
           <a href="contacto.html" class="item-link">Contacto</a>
         </li>
       </ul>
-      <div class="humberger__menu__overlay">
+      <div>
         <input type="checkbox" id="check">
-        <a></a><label for="check" class="checkbtn">
-          <i class="fas fa-bars"></i>
-          <!-- Menu Hamburguesa -->
-          <div class="humberger__menu__wrapper">
-            <nav class="humberger__menu__nav mobile-menu">
-              <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="#">Etudio</a></li>
-                <li><a href="#">Proyectos</a></li>
-                <li><a href="#">Interiores</a></li>
-                <li><a href="./contact.html">Contacto</a></li>
-              </ul>
-            </nav>
-            <div id="mobile-menu-wrap"></div>
-            <div class="humberger__menu__about">
-              <div class="humberger__menu__about__social sidebar__item__follow__links">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-youtube-play"></i></a>
-                <a href="#"><i class="fa fa-instagram"></i></a>
-                <a href="#"><i class="fa fa-envelope-o"></i></a>
-              </div>
-            </div>
-          </div>
-        </label></a>
-        <!-- Fin Menu Hamburguesa -->
+        <a><label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i></a>
     </nav>
   </header>
 
@@ -112,7 +90,7 @@
     </a>
 
  <!-- Empieza Index -->
-      <h1>Diseño contemporáneo y de vanguardia</h1>
+      <h1 id="titulo">Diseño contemporáneo y de vanguardia</h1>
 
   <main class="index-principal">
    
@@ -128,7 +106,7 @@
     </article>
 
     <a href="estudio.html">
-      <img src="assets/women-business-office-meetings.jpg" alt="Nosotras">
+      <img src="assets/women-business-office-meetings.jpg" alt="Nosotras" class="margen-foto">
     </a>
 
     <!-- Proyectos -->
@@ -141,7 +119,7 @@
         ética de diseño.</p>
     </article>
 
-    <a href="proyectos.html"><img src="assets/stairs cool.jpg" alt="Casa Huapi"></a>
+    <a href="proyectos.html"><img src="assets/stairs cool.jpg" alt="Casa Huapi" class="margen-foto"></a>
 
     <!-- Contacto -->
     <article class="texto-index">
@@ -154,10 +132,29 @@
         E-mail: xxx@gmail.com</p>
     </article>
 
-    <a href="contacto.html"><img src="assets/women-business-office-meetings.jpg" alt="Contactanos"></a>
+    <a href="contacto.html"><img src="assets/women-business-office-meetings.jpg" alt="Contactanos" class="margen-foto"></a>
 
   </main>
   <!-- termina -->
+
+  <article class="adress">
+    <img src="assets/logo.png" alt="Logo">
+    <div>
+      <h5>Estudio Aguilar y Dilmer</h5>
+      <p>Lunes a Viernes de 9 a 18hs.
+        <br> Jerónimo Salguero 350, CABA, 1177, Buenos Aires, Argentina
+        <br> Cel: +54 11 5851 5684
+        <br> Tel: +54 11 5846 5846
+        <br> E-mail: info@aguilarydilmerarq.com</p>
+    </div>
+    <ul>
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./estudio.html">Etudio</a></li>
+      <li><a href="./proyectos.html">Proyectos</a></li>
+      <li><a href="./interiores.html">Interiores</a></li>
+      <li><a href="./contact.html">Contacto</a></li>
+    </ul>
+  </article>
 
   <footer>
     <ul>
@@ -165,11 +162,11 @@
         <a href="https://web.whatsapp.com/"><img class="redes" src="assets/wp.png" alt="WhatsApp" width="30rem"
             height="30rem"></a></li>
       <li>
-        <a href="https://web.telegram.org/"><img class="redes" src="assets/telegram_icon_131945.png" alt="Telegram"
+        <a href="https://web.telegram.org/"><img class="redes" src="assets/telegram.png" alt="Telegram"
             width="30rem" height="30rem"></a></li>
       <li>
         <a href="https://www.linkedin.com/"><img class="redes"
-            src="assets/linked-in-square-button_icon-icons.com_68389.png" alt="LinkedIn" width="30rem"
+            src="assets/linked-in.png" alt="LinkedIn" width="30rem"
             height="30rem"></a></li>
       <li>
         <a href="https://www.facebook.com/"><img class="redes" src="assets/facebook.png" alt="Facebook" width="30rem"

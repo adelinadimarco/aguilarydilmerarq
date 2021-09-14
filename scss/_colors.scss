@@ -1,5 +1,33 @@
-// TEXTOS DE INDEX
+// INDEX
+.adress {
+	display: flex;
+	background-color: rgb(44, 44, 44);
+	padding: 2rem;
+	width: 100%;
+	align-items: center;
+	justify-content: space-between;
 
+	img {
+		height: 100px;
+		width: 250px;
+	}
+
+	div {
+		display: block;
+		text-align: center;
+		font-stretch: semi-expanded;
+		color: white;
+	}
+
+	ul li {
+		display: block;
+		text-decoration: none;
+		color: white;
+		text-align: center;
+	}
+}
+
+// TEXTOS GENERALES
 $fuente-resalta: 1rem/0.5rem;
 $rojo-cereza: rgb(255, 23, 73);
 $rosa: rgb(250, 95, 95);
@@ -10,52 +38,37 @@ $rosa: rgb(250, 95, 95);
 	text-transform: uppercase;
 }
 
-
-// TEXTOS GENERALES
-body {
-	color: white;
-
-	h1 {
-		text-align: center;
-		text-transform: uppercase;
-	}
-
-	h2 {
-		text-align: center;
-		font-weight: 700;
-	}
-
-	p {
-		font-weight: 400;
-	}
-}
-
 .italica {
+	//ESTILO DEL TITULO PRINCIPAL
 	font-style: italic;
 	text-align: center;
 }
 
-// MARGENES
+body {
+	color: white;
+	background-color: grayscale($color: #535355);
+	text-align: center;
 
-.padding-sup {
-	padding-top: 10vh;
-}
+	h1 {
+		text-align: center;
+		text-transform: uppercase;
+		margin: 1.5rem;
+		font-weight: 700;
+	}
 
+	h2 {
+		text-align: center;
+		font-weight: 600;
+	}
 
-.datos {
-	font-size: 0.5em;
-	font-variant-caps: all-small-caps;
+	p {
+		font-weight: 400;
+		padding-left: 10rem;
+		padding-right: 10rem;
+	}
 }
 
 // FORM DE CONTACTO - ESTILO
-
-#mapa {
-	width: 100%;
-	height: 25rem;
-	-webkit-filter: grayscale(100%);
-	-ms-filter: grayscale(100%);
-}
-
 .form {
 	font-family: "Montserrat", sans-serif;
 	margin: 2rem;
@@ -63,6 +76,8 @@ body {
 	color: $rojo-cereza;
 	width: 500px;
 	display: block;
+	align-content: center;
+	justify-content: center;
 
 	input {
 		border: none;
@@ -107,11 +122,51 @@ textarea:focus {
 	color: $rojo-cereza;
 }
 
-.adress {
-	text-align: center;
-	font-stretch: semi-expanded;
-	color: white;
+// ESTILOS DE ESTUDIO
+.desvanecer {
+	position: relative;
+	z-index: 10;
+	overflow: hidden;
+}
+
+.desvanecer img {
+	width: 700px;
+	height: 600px;
+}
+
+.desvanecer h3 {
+	position: absolute;
+	z-index: -1;
+	padding: 10px;
+	margin: 0;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: whitesmoke;
+}
+
+.desvanecer:before,
+.desvanecer::after {
+	content: "";
+	width: 350px;
+	height: 300px;
+	position: absolute;
+	top: 0;
+	left: 0;
 	background-color: black;
-	padding: 2rem;
-	width: 100%;
+	opacity: 0.6;
+}
+
+.desvanecer:before {
+	transform: rotate(45deg) translateY(-550px) translateX(20px);
+}
+
+.desvanecer:after {
+	transform: rotate(45deg) translateY(550px) translateX(-60px);
+}
+.desvanecer:hover:before {
+	transform: rotate(45deg) translateY(-300px) translateX(30px);
+}
+.desvanecer:hover:after {
+	transform: rotate(45deg) translateY(550px) translateX(-60px);
 }
