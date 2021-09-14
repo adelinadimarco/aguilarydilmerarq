@@ -45,49 +45,6 @@ body {
 }
 
 // ESTRUCTURA INDEX
-.indexx {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-
-.texto-indexx {
-    position: absolute;
-    text-align: center;
-    z-index: 100;
-}
-
-.texto {
-    padding: 5em;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
-}
-
-.texto-lol {
-    opacity: 0;
-    transition: .5s ease;
-    @include background-opacity(#000000, 0.3);
-}
-
-.texto {
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-.estudio:hover .texto-estudio {
-    opacity: 1;
-}
-
-
-// INDEX CON GRID
 .index-principal {
     display: flex;
     flex-direction: column;
@@ -95,30 +52,12 @@ body {
     justify-items: center;
 }
 
-
 // CONTACTO
 #mapa {
     width: 100%;
     height: 25rem;
     -webkit-filter: grayscale(100%);
     -ms-filter: grayscale(100%);
-}
-
-.formulario {
-    display: grid;
-    grid-auto-columns: 1fr;
-    grid-template-columns: 0.5fr 1.3fr 0.5fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-template-areas:
-        "... form ..."
-        "... form ..."
-        "... form ..."
-        "... form ..."
-}
-
-.form {
-    grid-area: form;
 }
 
 // PROYECTOS
@@ -132,7 +71,6 @@ body {
     border-radius: 2rem;
     background-color: whitesmoke;
     box-shadow: 6px 5px 15px rgba(0, 0, 0, 0.9);
-    text-align: center;
     height: 50%;
     width: 40vw;
     margin-right: 1.5rem;
@@ -155,18 +93,12 @@ body {
 
     p {
         color: black;
-        display: inline-block;
+        max-width: 40vw;
     }
 
     h4 {
         color: black;
-        margin-top: 2px;
-        font-size: 28px;
-    }
-
-    .grid-stats {
-        grid-area: stats;
-        background-color: $rosa;
+        font-size: 2.8rem;
     }
 }
 
@@ -174,13 +106,12 @@ body {
 .interior {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     gap: 0px 0px;
     grid-template-areas:
         "obra1 obra2"
         "obra3 obra4"
-        "obra5 obra6"
-        "obra7 obra8";
+        "obra5 obra6";
     max-width: 100%;
     overflow-x: hidden;
 
@@ -214,16 +145,7 @@ body {
     grid-area: obra6;
 }
 
-.obra7 {
-    grid-area: obra7;
-}
-
-.obra8 {
-    grid-area: obra8;
-}
-
 // ESTUDIO
-
 .estudio {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;

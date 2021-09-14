@@ -1,5 +1,17 @@
 // MEDIA PARA PANTALLA CELULAR PEQUEÑA - MAX 500px
 @media only screen and (max-width: 500px) {
+
+    //Responsive Para Todas Las Secciones
+    .adress {
+        display: none;
+    }
+
+    #titulo {
+        max-width: 500px;
+        font-size: 2rem;
+        overflow: hidden;
+    }
+
     body {
         display: block;
         width: 100vw;
@@ -13,7 +25,6 @@
             width: 100vw;
             overflow: hidden;
         }
-
 
         main {
             display: block;
@@ -48,6 +59,17 @@
         }
     }
 
+    // Responsive para FOOTER
+    footer {
+        max-width: 100%;
+
+        p {
+            display: inline-block;
+            text-align: center;
+        }
+    }
+
+    //Responsive para CONTACTO
     #mapa {
         width: 100%;
         height: 15vh;
@@ -55,38 +77,226 @@
 
     .form {
         display: block;
-        font-family: "Montserrat", sans-serif;
         margin: 0;
+        padding: 0;
+        width: 100%;
+        overflow: hidden;
+        padding-bottom: 1rem;
     }
 
-    .texto-idex {
+    // Responsive INDEX
+    .texto-index {
         padding: 0;
         margin: 0;
     }
 
+    //Responsive ESTUDIO
     .estudio {
         display: block;
     }
 
+    //Responsive PROJECTOS
     .two-cards {
         display: block;
+        margin: 0;
     }
 
+    .card {
+        display: block;
+        background-color: whitesmoke;
+        box-shadow: 6px 5px 15px rgba(0, 0, 0, 0.9);
+        width: 95vw;
+        align-items: center;
+    }
+
+    .card-image {
+        grid-area: image;
+        height: 60vh;
+        width: 95vw;
+    }
+
+    .card-text {
+        margin: 1.5rem;
+
+        .place {
+            color: royalblue;
+            font-size: 0.8rem;
+        }
+
+        p {
+            color: black;
+            width: 95vw;
+
+        }
+
+        h4 {
+            color: black;
+            font-size: 1.8rem;
+        }
+    }
+
+    //Responsive INTERIORES
     .interior {
         display: block;
-    }
 
-    .adress {
-        display: none;
-    }
-
-    #titulo {
-        max-width: 500px;
-        font-size: 2rem;
-        overflow: hidden;
+        img {
+            justify-items: center;
+            height: 50%;
+            width: 100%;
+        }
     }
 }
 
-// MEDIA PARA PANTALLA TABLET - MAX 1024px
-// @media only screen and (max-width: 1024px) {
-//   }
+// MEDIA PARA PANTALLA TABLET GRANDE - MAX 1024px
+@media only screen and (max-width: 1024px) {
+    //Responsive Para Todas Las Secciones
+    .adress {display: flex;
+    justify-content: space-evenly;
+
+    img {
+        display: none;
+    }}
+
+    #titulo {
+        font-size: 5rem;
+        overflow: hidden;
+        align-items: center;
+        justify-content: center;
+    }
+
+    body {
+        display: block;
+        width: 100vw;
+
+        h1 {
+            margin-top: 8vh;
+            display: block;
+            font-weight: 700;
+            text-align: center;
+            text-transform: uppercase;
+            width: 100vw;
+            overflow: hidden;
+        }
+
+        main {
+            display: block;
+            margin: 0;
+            padding: 0;
+
+            div a img {
+                justify-items: center;
+                height: 50%;
+                width: 100%;
+            }
+
+            h2 {
+                text-align: center;
+                font-weight: 700;
+                font-size: 4rem;
+            }
+
+            h3 {
+                text-align: center;
+                font-weight: 700;
+                font-size: 3rem;
+
+            }
+
+            p { justify-content: center;
+                align-content: center;
+                text-align: center;
+                font-weight: 400;
+                font-size: 2rem;
+                padding-left: 22%;
+            }
+        }
+    }{}
+
+    // Responsive para FOOTER
+    footer {
+        max-width: 100%;
+
+        p {
+            display: inline-block;
+            text-align: center;
+        }
+    }
+
+    //Responsive para CONTACTO
+    #mapa {
+        width: 100%;
+        height: 15vh;
+    }
+
+    .form {
+        display: block;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        overflow: hidden;
+        padding-bottom: 1rem;
+    }
+
+    // Responsive INDEX
+    .texto-index {
+        padding: 0;
+        margin: 0;
+    }
+
+    //Responsive ESTUDIO
+    .estudio {
+        display: block;
+    }
+
+    //Responsive PROJECTOS
+    .two-cards {
+        display: block;
+        margin: 0;
+    }
+
+    .card {
+        display: block;
+        background-color: whitesmoke;
+        box-shadow: 6px 5px 15px rgba(0, 0, 0, 0.9);
+        width: 95vw;
+        align-items: center;
+        margin: 1.5rem;
+    }
+
+    .card-image {
+        grid-area: image;
+        height: 60vh;
+        width: 95vw;
+    }
+
+    .card-text {
+        margin: 1.5rem;
+        width: 95vw;
+
+        .place {
+            color: royalblue;
+            font-size: 1.5rem;
+        }
+
+        p {
+            color: black;
+      justify-content: center;
+        }
+
+        h4 {
+            color: black;
+            font-size: 2.5rem;
+        }
+    }
+
+    //Responsive INTERIORES
+    .interior {
+        display: block;
+
+        img {
+            justify-items: center;
+            height: 50%;
+            width: 100%;
+        }
+    }
+}
