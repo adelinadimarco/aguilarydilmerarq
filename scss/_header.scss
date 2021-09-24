@@ -7,87 +7,90 @@
 .logo {
     animation: zoomIn;
     animation-duration: 3s;
-    margin: 6px;
-    width: 98%;
-    height: 98%;
     animation-delay: 2ms;
+    width: 15rem;
+    height: auto;
+    padding: 1rem;
 }
 
-.header {
-    @include background-opacity(#000000, 0.3);
-    overflow: hidden;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-.header nav {
-    height: 100%;
+body {
+    margin: 0;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.8);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 100;
+    width: 100vw;
 
-    ul li {
-        list-style: none;
-        display: inline-block;
-        justify-content: space-evenly;
-        padding: 1.5em;
-
-        a {
-            text-decoration: none;
-            font-weight: 700;
-            color: white;
-            font-size: 1.5em;
-        }
-    }
 }
 
-.header a:hover {
-    color: $rojo-cereza;
-}
-
-.header a.active {
-    color: grayscale($color: #525252);
-}
-
-.header .icon {
+#burga {
     display: none;
 }
 
-.checkbtn {
-    font-size: 30px;
+header label {
+    display: none;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav li a {
+    display: block;
+    padding: 15px 20px;
+    font-weight: 700;
+    font-size: 1.8em;
     color: white;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
+    text-decoration: none;
 }
 
-#check {
-    display: none;
+nav a:hover {
+    color: $rojo-cereza
 }
 
-@media screen and (max-width: 360px) {
-    .checkbtn {
+@media (max-width: 500px) {
+    header {
         display: block;
+        margin: 0;
+        text-align: center;
+        position: absolute;
     }
 
-    #check:checked~ul {
-        display: inline-flex;
+    header label {
+        display: block;
+        background: rgba(0, 0, 0, 0.8);
     }
 
-    .header {
-        z-index: 1;
+    .menu {
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        margin: -200%;
+        background: rgba(0, 0, 0, 0.8);
+        transition: 1.1s cubic-bezier(.17, .67, .83, .67);
 
-        ul {
-            display: none;
-
-        }
-
-        .logo {
-            width: 85%;
-            height: 85%;
-        }
-
-        .header a i:hover {
-            display: header nav;
-        }
     }
+
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #burga:checked~.menu {
+        margin: 0;
+    }
+
 }
