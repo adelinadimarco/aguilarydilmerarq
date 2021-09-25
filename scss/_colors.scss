@@ -1,10 +1,10 @@
 .adress {
 	display: flex;
 	background-color: rgb(44, 44, 44);
-	padding: 2rem;
-	width: 100vw;
+	padding: 1rem;
 	align-items: center;
 	justify-content:space-evenly;
+	width: 100vw;
 
 	img {
 		height: 100px;
@@ -74,6 +74,7 @@ body {
 	p {
 		font-weight: 400;
 		max-width: 75vw;
+		justify-content: center;
 	}
 }
 
@@ -108,6 +109,7 @@ body {
 		height: auto;
 		resize: none;
 		margin-bottom: 2vh;
+		font-family: "Montserrat", sans-serif;
 	}
 
 	.button {
@@ -130,27 +132,4 @@ textarea::placeholder {
 
 textarea::placeholder {
 	color: $rojo-cereza;
-}
-
-// ESTILOS DE ESTUDIO
-.desvanecer {
-	position: relative;
-	z-index: 10;
-	overflow: hidden;
-}
-
-.desvanecer img {
-	width: 700px;
-	height: 600px;
-}
-
-.desvanecer h3 {
-	position: absolute;
-	z-index: -1;
-	padding: 10px;
-	margin: 0;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	color: whitesmoke;
 }
